@@ -1,0 +1,51 @@
+{
+  "cluster": {
+    "nodes": 12,
+    "racks": 3,
+    "azs": 2,
+    "majority_quorum": 7
+  },
+  "kill_and_failover": {
+    "killed_nodes": [
+      1,
+      5
+    ],
+    "detection_time_s_simulated": {
+      "node1": 0.6,
+      "node5": 0.6
+    },
+    "failover_requests": 200,
+    "failover_errors": 0,
+    "failover_error_rate": 0.0
+  },
+  "partition": {
+    "partitioned_rack": 0,
+    "partitioned_nodes": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "majority_side_nodes": 8,
+    "minority_side_nodes": 4,
+    "majority_writes_acknowledged": 30,
+    "majority_reads_ok_during_partition": true,
+    "minority_write_attempts": 10,
+    "minority_writes_rejected": 10,
+    "acknowledged_writes_lost_after_heal": 0,
+    "rejected_minority_writes_visible_after_heal": 0,
+    "correct": true
+  },
+  "load_balance": {
+    "requests": 10000,
+    "distinct_keys": 200,
+    "epsilon": 0.25,
+    "capacity_per_node": 1042,
+    "plain_max_mean_ratio": 2.79,
+    "bounded_max_mean_ratio": 1.2504,
+    "plain_max_load": 2325,
+    "bounded_max_load": 1042,
+    "mean_load": 833.3333333333334
+  },
+  "wall_time_s": 0.15
+}

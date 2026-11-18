@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "faultgrid"
+version = "0.1.0"
+description = "A small fault-tolerant distributed key-value system with quorum replication, a SWIM-style failure detector, and bounded-load consistent hashing."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[tool.setuptools.packages.find]
+include = ["faultgrid*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

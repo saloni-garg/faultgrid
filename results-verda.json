@@ -1,0 +1,66 @@
+{
+  "bench_runs": 10,
+  "cluster": {
+    "nodes": 12,
+    "racks": 3,
+    "azs": 2,
+    "majority_quorum": 7
+  },
+  "detection_time_s_simulated": {
+    "mean": 0.6,
+    "min": 0.6,
+    "max": 0.6
+  },
+  "failover_errors_per_run": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "failover_error_rate": {
+    "mean": 0.0,
+    "min": 0.0,
+    "max": 0.0
+  },
+  "partition_correct_all_runs": true,
+  "partition_minority_rejected": {
+    "mean": 10,
+    "min": 10,
+    "max": 10
+  },
+  "partition_acknowledged_lost_after_heal": {
+    "mean": 0,
+    "min": 0,
+    "max": 0
+  },
+  "load_plain_max_mean": {
+    "mean": 2.79,
+    "min": 2.79,
+    "max": 2.79
+  },
+  "load_bounded_max_mean": {
+    "mean": 1.2504,
+    "min": 1.2504,
+    "max": 1.2504
+  },
+  "wallclock_detector": {
+    "trials": 5,
+    "period_s": 0.1,
+    "elapsed_s_per_trial": [
+      0.601,
+      0.601,
+      0.601,
+      0.601,
+      0.601
+    ],
+    "mean_elapsed_s": 0.601,
+    "min_elapsed_s": 0.601,
+    "max_elapsed_s": 0.601
+  }
+}
